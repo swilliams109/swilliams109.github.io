@@ -5,45 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Assignment 6B - Web Accessibility</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 20px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #004080;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Web Accessibility Assignment</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="assignment6b.html">Accessibility</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="assignment6b.html">Accessibility</a>
+  </nav>
 
-  <main>
-    <h2>Accessible Content</h2>
-    <img src="images/accessibility.png" alt="A person using a screen reader with a laptop" />
-    <p>This page demonstrates the application of web accessibility tools and standards.</p>
-  </main>
+  <h1>Assignment 6B: Making Websites Accessible</h1>
+
+  <p>This page demonstrates how we can build websites that are accessible to all users, including those using screen readers or keyboard navigation.</p>
+
+  <h2>Image Accessibility</h2>
+  <p>The image below includes descriptive ALT text that clearly conveys its meaning:</p>
+  <img src="images/accessibility-example.png" alt="Illustration showing accessible web design across a phone, tablet, and desktop screen">
+
+  <h2>Transcript for Multimedia</h2>
+  <p><strong>Transcript:</strong> The video introduces accessibility fundamentals such as using ALT text, color contrast, semantic HTML, and ensuring keyboard navigability.</p>
 
   <footer>
-    <p>&copy; 2025 Shamya Williams</p>
+    <p>&copy; 2025 Shamya Williams. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
-<!-- Save this code as accessibility.svg inside your /images folder -->
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Person using a laptop with accessibility tools</title>
-  <desc id="desc">A cartoon person at a desk with a laptop displaying accessibility settings</desc>
-  <rect width="200" height="200" fill="#f5f5f5"/>
-  <circle cx="100" cy="60" r="30" fill="#4a90e2"/>
-  <rect x="60" y="100" width="80" height="40" fill="#333"/>
-  <rect x="85" y="90" width="30" height="10" fill="#999"/>
-</svg>
-
-<img src="images/accessibility.svg" alt="Cartoon person using a laptop with accessibility settings visible" />
-
-```html
-<main>
-  <h2>Accessible Content</h2>
-  <img src="images/accessibility.svg" alt="Cartoon person using a laptop with accessibility settings visible" />
-  <p></p>
-
