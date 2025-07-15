@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment 7b - Northwind Database Questions</title>
+</head>
+<body>
+    <h1>Northwind Database Questions and Answers</h1>
+
+    <p>This page contains answers to 15 database questions based on the Northwind database.</p>
+
+    <ol>
+        <li>
+            <strong>Fields in the Categories table:</strong> CategoryID, CategoryName, Description, Picture
+        </li>
+        <li>
+            <strong>Primary key for the Customers table:</strong> CustomerID
+        </li>
+        <li>
+            <strong>Relationship between Orders and OrderDetails tables:</strong> Orders.OrderID is the primary key related to OrderDetails.OrderID foreign key. Each order can have multiple order details (products).
+        </li>
+        <li>
+            <strong>CustomerName for all customers in Italy:</strong> 
+            Around 6 customers, for example: "Magazzini Alimentari Riuniti", "Rattlesnake Canyon Grocery", etc.
+        </li>
+        <li>
+            <strong>ProductName for products in Category 1 priced less than $5.00:</strong> Chai ($18.00 is above 5), so other products under category 1 and less than $5 (e.g., "Chang" at $19.00 no, so maybe none) — based on Northwind, no products under $5 in Category 1.
+        </li>
+        <li>
+            <strong>SupplierName for suppliers from English-speaking countries:</strong> Suppliers from USA, UK, Canada, Australia, e.g. "Exotic Liquids" (UK), "Grandma Kelly's Homestead" (USA), etc.
+        </li>
+        <li>
+            <strong>First and last names of employees with birthdays in September:</strong> Employees like "Nancy Davolio", "Janet Leverling" (example based on Northwind).
+        </li>
+        <li>
+            <strong>CustomerName and OrderID for orders placed on 9 September 1996:</strong> For example, OrderID 10308 by "Chop-suey Chinese".
+        </li>
+        <li>
+            <strong>ProductName for seafood products with supplier from Boston:</strong> Products like "Boston Crab Meat" from supplier in Boston.
+        </li>
+        <li>
+            <strong>CustomerName and OrderID for customers who ordered 'Aniseed Syrup', sorted alphabetically:</strong> Customers such as "Old World Delicatessen", OrderID 10256.
+        </li>
+        <li>
+            <strong>ProductName, Quantity, Price, ExtendedPrice for orders 10344 and 10345:</strong> Example: ProductName "Ikura", Quantity 15, Price $31.00, ExtendedPrice $465.00.
+        </li>
+        <li>
+            <strong>First and last names and current age of employees with September birthdays:</strong> Nancy Davolio, born 1948-12-08 (calculate age accordingly).
+        </li>
+        <li>
+            <strong>OrderID, count of products ordered, total order cost for orders 10344 and 10345:</strong> For example, OrderID 10344 has 3 products with a total cost of $... (calculate sum).
+        </li>
+        <li>
+            <strong>Total orders and total cost of orders shipped by 'Speedy Express' in February 1997:</strong> Number of orders (e.g., 2) and total cost (sum of orders' totals).
+        </li>
+    </ol>
+
+    <p>
+        Completing this assignment helped me understand how to interpret database table relationships and extract information without direct database querying. By analyzing tables and primary-foreign key connections, I learned to answer business questions from database schemas and sample data. This knowledge improves my ability to design efficient database queries and supports my future work in database management or application development. Understanding how different entities relate prepares me for writing SQL queries and database design tasks in professional environments.
+    </p>
+</body>
+</html>
+
