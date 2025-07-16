@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8 - SQL Commands</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 40px auto;
+      max-width: 900px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    ul {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      list-style-type: disc;
+    }
+    code {
+      font-family: monospace;
+      background-color: #eef;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+    nav ul {
+      list-style:none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      text-decoration: none;
+      background-color: #3498db;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    p {
+      margin-top: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Assignment 8: SQL Commands</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="assignment6a.html">Assignment 6a</a></li>
+      <li><a href="assignment6b.html">Assignment 6b</a></li>
+      <li><a href="assignment8.html">Assignment 8</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>SQL Commands Used</h2>
+    <ul>
+      <li><code>SELECT  FROM Customers;</code></li>
+      <li><code>SELECT ProductName FROM Products WHERE CategoryID = 2;</code></li>
+      <li><code>SELECT COUNT(*) FROM Orders WHERE ShippedDate IS NOT NULL;</code></li>
+      <li><code>INSERT INTO Shippers (ShipperID, ShipperName, Phone) VALUES (4, 'On Time Delivery', '(503) 555 0123');</code></li>
+      <li><code>UPDATE Products SET Price = Price + 1;</code></li>
+      <li><code>UPDATE Products SET Price = Price - 1;</code></li>
+      <li><code>UPDATE Shippers SET ShipperName = 'On-Time Delivery' WHERE ShipperID = 4;</code></li>
+      <li><code>DELETE FROM Shippers WHERE ShipperID = 4;</code></li>
+    </ul>
+
+    <h2>Lesson Summary</h2>
+    <p>
+      This lesson helped me understand how SQL commands interact with a database. I practiced using SELECT, WHERE, COUNT, INSERT INTO, UPDATE, and DELETE statements to retrieve, modify, and remove data. These skills are essential for managing a real-world database like the one I plan to use for my cupcake business. I learned how data can be filtered and updated efficiently, which helps in making decisions based on product pricing, order tracking, and customer data. The hands-on activities made it easier to grasp the power of SQL in day-to-day business operations.
+    </p>
+  </main>
+
+</body>
+</html>
